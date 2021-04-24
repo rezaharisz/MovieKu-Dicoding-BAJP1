@@ -1,0 +1,25 @@
+#Menampilkan Data List Movie
+1. Memastikan cr_rview dalam keadaan tampil
+2. Gulir cr_rview ke posisi data terakhir
+
+#Menampilkan Detail List Movie
+1. Melakukan click cr_rview pada data ke 0
+2. Memastikan tv_movie telah ditampilkan
+3. Menyocokkan tv_movie yang telah tampil sama dengan data pada movie posisi ke 0
+4. Memastikan tv_category telah ditampilkan
+5. Menyocokkan tv_category yang telah tampil sama dengan data pada movie posisi ke 0
+6. Memastikan tv_des telah ditampilkan
+7. Menyocokkan tv_des yang telah tampil sama dengan data pada movie posisi ke 0
+
+#Menampilkan Data List TvShows
+1. Memastikan cr_tvshows dalam keadaan tampil
+2. Gulir cr_tvshows ke posisi data terakhir
+
+#Menampilkan Detail List Movie
+1. Melakukan click cr_tvshows pada data ke 0
+2. Memastikan tv_tvshows telah ditampilkan
+3. Menyocokkan tv_tvshows yang telah tampil sama dengan data pada movie posisi ke 0
+4. Memastikan tv_category_tvshows telah ditampilkan
+5. Menyocokkan tv_category_tvshows yang telah tampil sama dengan data pada movie posisi ke 0
+6. Memastikan tv_des_tvshows telah ditampilkan
+7. Menyocokkan tv_des_tvshows yang telah tampil sama dengan data pada movie posisi ke 0

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/sixteen_dp"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".view.DetailMovie">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sixteen_dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_back"
+            android:contentDescription="@string/button_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_movie"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sixteen_sp" />
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="250dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:src="@drawable/poster_alita"
+                android:contentDescription="@string/poster" />
+
+            <TextView
+                android:id="@+id/tv_movie"
+                style="@style/Movie"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/sixteen_dp"
+                android:textSize="@dimen/twentyfour_sp" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                style="@style/Category"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twelve_sp"
+                android:textStyle="italic"
+                android:text="@string/tv_category" />
+
+            <TextView
+                style="@style/Overview"
+                android:layout_marginTop="@dimen/sixteen_dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp"
+                android:text="@string/overview" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                style="@style/Description"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/sixteen_sp"
+                android:textColor="@color/white"
+                android:text="@string/tv_des" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

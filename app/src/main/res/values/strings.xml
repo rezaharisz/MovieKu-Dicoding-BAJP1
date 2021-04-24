@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MovieKu</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="tv_category">TV-PG | 43min | Action, Adventure, Drama</string>
+    <string name="tv_des">As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.</string>
+    <string name="poster">poster</string>
+    <string name="overview">Synopsis</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="detail_movie">Detail Movie</string>
+    <string name="button_back">Button Back</string>
+    <string name="splash_image">Splash Image</string>
+</resources>
