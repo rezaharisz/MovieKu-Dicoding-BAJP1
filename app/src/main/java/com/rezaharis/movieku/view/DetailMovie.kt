@@ -2,12 +2,16 @@ package com.rezaharis.movieku.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.ViewModelProvider
+import com.bumptech.glide.Glide
 import com.rezaharis.movieku.databinding.ActivityDetailMovieBinding
 import com.rezaharis.movieku.model.DataMovie
+import com.rezaharis.movieku.viewModel.MovieViewModel
 
 class DetailMovie : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailMovieBinding
+    private lateinit var movieViewModel: MovieViewModel
 
     companion object{
         const val MOVIE = "movie"
@@ -22,13 +26,16 @@ class DetailMovie : AppCompatActivity() {
             super.onBackPressed()
         }
 
-        getMovie()
+        movieViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(MovieViewModel::class.java)
+        getMovie(movieViewModel.getMovieId(intent.getIntExtra(MOVIE, 0)))
     }
 
-    private fun getMovie(){
-        val movie = intent.getParcelableExtra<DataMovie>(MOVIE) as DataMovie
+    private fun getMovie(movie : DataMovie){
+        Glide.with(this)
+                .load(movie.poster)
+                .override(250, 320)
+                .into(binding.ivPoster)
         binding.tvMovie.text = movie.movieName
-        binding.ivPoster.setImageResource(movie.poster)
         binding.tvCategory.text = movie.category
         binding.tvDes.text = movie.description
     }

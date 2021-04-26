@@ -5,6 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class DataTvShows(
+        val id: Int,
         val poster: Int,
         val tvShowsName: String,
         val description: String,

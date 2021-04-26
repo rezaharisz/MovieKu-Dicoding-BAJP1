@@ -10,6 +10,7 @@ import com.rezaharis.movieku.view.DetailMovie
 import com.rezaharis.movieku.R
 import com.rezaharis.movieku.databinding.ItemMovieBinding
 import com.rezaharis.movieku.model.DataMovie
+import com.rezaharis.movieku.view.DetailMovie.Companion.MOVIE
 
 class MovieAdapter(private val listMovie: ArrayList<DataMovie>): RecyclerView.Adapter<MovieAdapter.MovieHolder>() {
 
@@ -30,7 +31,7 @@ class MovieAdapter(private val listMovie: ArrayList<DataMovie>): RecyclerView.Ad
 
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, DetailMovie::class.java)
-                intent.putExtra(DetailMovie.MOVIE, dataMovie)
+                intent.putExtra(MOVIE, dataMovie.id)
                 itemView.context.startActivity(intent)
             }
         }

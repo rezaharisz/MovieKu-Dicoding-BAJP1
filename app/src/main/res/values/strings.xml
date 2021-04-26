@@ -10,4 +10,5 @@
     <string name="detail_movie">Detail Movie</string>
     <string name="button_back">Button Back</string>
     <string name="splash_image">Splash Image</string>
+    <string name="detail_tv_show">Detail Tv Show</string>
 </resources>

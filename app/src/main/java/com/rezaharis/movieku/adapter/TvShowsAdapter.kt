@@ -10,10 +10,11 @@ import com.rezaharis.movieku.R
 import com.rezaharis.movieku.databinding.ItemTvshowBinding
 import com.rezaharis.movieku.model.DataTvShows
 import com.rezaharis.movieku.view.DetailTvShow
+import com.rezaharis.movieku.view.DetailTvShow.Companion.TV_SH0WS
 
 class TvShowsAdapter(private val listTvShows: ArrayList<DataTvShows>): RecyclerView.Adapter<TvShowsAdapter.TvShowsViewHolder>() {
 
-    fun setData(tvShows: ArrayList<DataTvShows>){
+    fun setData(tvShows: List<DataTvShows>){
         listTvShows.addAll(tvShows)
         notifyDataSetChanged()
     }
@@ -30,7 +31,7 @@ class TvShowsAdapter(private val listTvShows: ArrayList<DataTvShows>): RecyclerV
 
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, DetailTvShow::class.java)
-                intent.putExtra(DetailTvShow.TV_SH0WS, dataTvShows)
+                intent.putExtra(TV_SH0WS, dataTvShows.id)
                 itemView.context.startActivity(intent)
             }
         }
