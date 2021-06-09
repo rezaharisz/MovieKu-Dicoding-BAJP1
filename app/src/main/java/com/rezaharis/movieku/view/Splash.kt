@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.rezaharis.movieku.view
 
 import android.content.Intent

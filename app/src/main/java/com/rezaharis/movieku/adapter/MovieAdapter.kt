@@ -20,7 +20,7 @@ class MovieAdapter(private val listMovie: ArrayList<DataMovie>): RecyclerView.Ad
     }
 
     inner class MovieHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val binding = ItemMovieBinding.bind(itemView)
+        private val binding = ItemMovieBinding.bind(itemView)
 
         fun bind(dataMovie: DataMovie){
             Glide.with(itemView)

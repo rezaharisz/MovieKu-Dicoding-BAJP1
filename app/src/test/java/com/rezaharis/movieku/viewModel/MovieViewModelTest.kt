@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.rezaharis.movieku.viewModel
 
 import com.rezaharis.movieku.utils.dummyData.MovieList
@@ -23,7 +25,7 @@ class MovieViewModelTest{
 
     @Test
     fun getMovieId(){
-        val movieId = MovieList.getMovieList().get(0)
+        val movieId = MovieList.getMovieList()[0]
         val getMovieId = movieViewModel.getMovieId(movieId.id)
 
         assertEquals(0, getMovieId.id)

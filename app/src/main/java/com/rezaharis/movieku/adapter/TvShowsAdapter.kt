@@ -20,7 +20,7 @@ class TvShowsAdapter(private val listTvShows: ArrayList<DataTvShows>): RecyclerV
     }
 
     inner class TvShowsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val binding = ItemTvshowBinding.bind(itemView)
+        private val binding = ItemTvshowBinding.bind(itemView)
 
         fun bind(dataTvShows: DataTvShows){
             Glide.with(itemView)
